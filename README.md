@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 Paynion – Split Payments, Keep Friends
 
-## Getting Started
+**Paynion** is a Web3-powered social dApp designed to simplify group payments using smart contracts, cross-chain settlements, and intuitive UX.
 
-First, run the development server:
+Whether it's a dinner, a trip, or a shared experience, Paynion allows one person to pay upfront while others reimburse their share in **any crypto, on any supported chain** – all automated and transparent.
+
+---
+
+## 🚀 Features
+
+- 🧾 **Create & Share Group Expenses**  
+  The payer creates a "payment request" including the bill, name (e.g. *"Dinner at Café Madero"*) and even uploads a photo of the receipt.
+
+- 📲 **QR Code Onboarding**  
+  Friends scan a QR code to join the split and confirm their individual share or select specific items from the receipt.
+
+- 🤖 **OCR Receipt Scanning**  
+  AI-powered receipt analysis extracts itemized data from photos so participants can select what they ordered.
+
+- 🔀 **Cross-Chain Payments**  
+  Built with [Hyperlane](https://www.hyperlane.xyz/) to enable payments across chains. Payees can request in one crypto (e.g., USDC on Celo) while others pay in a different one (e.g., USDT on Base or Ethereum).
+
+- 📩 **Decentralized Notifications**  
+  No need to chase friends — Paynion uses web3-native notifications (e.g., Push Protocol) to remind debtors.
+
+- 🧠 **Smart Contract Ledger**  
+  All agreements are recorded in a verifiable on-chain smart contract for transparency and trust.
+
+---
+
+## 🛠 Tech Stack
+
+- ☁️ **Frontend:** React + Tailwind (Cursor-compatible)  
+- 🔗 **Smart Contracts:** Solidity, deployed on multiple EVM-compatible chains  
+- 🔄 **Cross-Chain Messaging:** Hyperlane Protocol  
+- 🧠 **OCR & AI:** Gemini Vision / OCR API  
+- 🔔 **Notifications:** Push Protocol  
+- 🧪 **Dev Tools:** Hardhat, Foundry, Ethers.js
+
+---
+
+## 📷 Screenshots & Mockups
+
+Coming soon! Want to contribute UI mockups? Check out the [open issues](#) or design in [Figma](#)!
+
+---
+
+## 👥 Use Case Example
+
+1. Ana pays $90 at a restaurant.  
+2. She creates a **Paynion** request: “Dinner at Café Madero”.  
+3. A QR code is generated and shared.  
+4. Her 3 friends scan it, adjust what they owe (e.g., one selects items via OCR), and choose to repay in the crypto and network of their choice.  
+5. Paynion handles cross-chain transfers and Ana gets her USDC on Celo.  
+6. Everyone is happy. No awkward follow-ups.
+
+---
+
+## 🧪 Live Demo
+
+🧱 In development. Want to help test the alpha version? [Open an issue](#) or join the waitlist.
+
+---
+
+## 📦 Setup Locally
 
 ```bash
+git clone https://github.com/your-username/paynion.git
+cd paynion
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

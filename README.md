@@ -18,24 +18,21 @@ Whether it's a dinner, a trip, or a shared experience, Paynion allows one person
   AI-powered receipt analysis extracts itemized data from photos so participants can select what they ordered.
 
 - 🔀 **Cross-Chain Payments**  
-  Built with [Hyperlane](https://www.hyperlane.xyz/) to enable payments across chains. Payees can request in one crypto (e.g., USDC on Celo) while others pay in a different one (e.g., USDT on Base or Ethereum).
+  Built with [CCIP](https://chain.link/cross-chain) to enable payments across chains. Payees can request in one crypto (e.g., USDC on Celo) while others pay in a different one (e.g., USDT on Base or Ethereum).
 
-- 📩 **Decentralized Notifications**  
-  No need to chase friends — Paynion uses web3-native notifications (e.g., Push Protocol) to remind debtors.
 
 - 🧠 **Smart Contract Ledger**  
-  All agreements are recorded in a verifiable on-chain smart contract for transparency and trust.
+  All agreements are recorded in verifiable on-chain smart contracts for transparency and trust on the Mantle Network.
 
 ---
 
 ## 🛠 Tech Stack
 
-- ☁️ **Frontend:** React + Tailwind (Cursor-compatible)  
+- ☁️ **Frontend:** React Native
 - 🔗 **Smart Contracts:** Solidity, deployed on multiple EVM-compatible chains  
-- 🔄 **Cross-Chain Messaging:** Hyperlane Protocol  
+- 🔄 **Cross-Chain Messaging:** CCIP
 - 🧠 **OCR & AI:** Gemini Vision / OCR API  
-- 🔔 **Notifications:** Push Protocol  
-- 🧪 **Dev Tools:** Hardhat, Foundry, Ethers.js
+- 🧪 **Dev Tools:** Foundry, Ethers.js
 
 ---
 
@@ -62,10 +59,19 @@ Coming soon! Want to contribute UI mockups? Check out the [open issues](#) or de
 
 ---
 
-## 📦 Setup Locally
-
-```bash
-git clone https://github.com/your-username/paynion.git
+# Clone el repositorio
+git clone https://github.com/SergioFinix/paynion.git
 cd paynion
+
+# Instalar dependencias
 npm install
-npm run dev
+
+# Para iOS (requiere macOS y Xcode)
+cd ios && pod install && cd ..
+npx react-native run-ios
+
+# Para Android (requiere Android Studio configurado)
+npx react-native run-android
+
+# Iniciar Metro bundler (desarrollo)
+npx react-native start

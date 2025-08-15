@@ -29,7 +29,7 @@ Whether it's a dinner, a trip, or a shared experience, Paynion allows one person
 ## 🛠 Tech Stack
 
 - ☁️ **Frontend:** React Native
-- 🔗 **Smart Contracts:** Solidity, deployed on multiple EVM-compatible chains  
+- 🔗 **Smart Contracts:** Solidity
 - 🔄 **Cross-Chain Messaging:** CCIP
 - 🧠 **OCR & AI:** Gemini Vision / OCR API  
 - 🧪 **Dev Tools:** Foundry, Ethers.js

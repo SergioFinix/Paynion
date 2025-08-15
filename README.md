@@ -59,19 +59,19 @@ Coming soon! Want to contribute UI mockups? Check out the [open issues](#) or de
 
 ---
 
-# Clone el repositorio
+# Clone the repository
 git clone https://github.com/SergioFinix/paynion.git
 cd paynion
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Para iOS (requiere macOS y Xcode)
+# For iOS (requires macOS and Xcode)
 cd ios && pod install && cd ..
 npx react-native run-ios
 
-# Para Android (requiere Android Studio configurado)
+# For Android (requires Android Studio setup)
 npx react-native run-android
 
-# Iniciar Metro bundler (desarrollo)
+# Start Metro bundler (development)
 npx react-native start
